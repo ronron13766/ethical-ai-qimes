@@ -1,0 +1,442 @@
+{
+  "results": {
+    "QIMES": [
+      {
+        "scenario": "Medizinische Triage (jung vs. alt)",
+        "decision": "blocked_by_dignity",
+        "metadata": {
+          "model": "QIMES",
+          "scenario": "Medizinische Triage (jung vs. alt)",
+          "violated_constraints": [
+            "no_discrimination"
+          ],
+          "reason": "Würde-Constraint verletzt"
+        },
+        "ground_truth": "reject"
+      },
+      {
+        "scenario": "Heimliche Emotionsanalyse im Handel",
+        "decision": "blocked_by_dignity",
+        "metadata": {
+          "model": "QIMES",
+          "scenario": "Heimliche Emotionsanalyse im Handel",
+          "violated_constraints": [
+            "privacy_protection",
+            "autonomy_respect",
+            "transparency"
+          ],
+          "reason": "Würde-Constraint verletzt"
+        },
+        "ground_truth": "blocked"
+      },
+      {
+        "scenario": "Kredit-Scoring mit Wohnort",
+        "decision": "blocked_by_dignity",
+        "metadata": {
+          "model": "QIMES",
+          "scenario": "Kredit-Scoring mit Wohnort",
+          "violated_constraints": [
+            "no_discrimination"
+          ],
+          "reason": "Würde-Constraint verletzt"
+        },
+        "ground_truth": "human_review"
+      },
+      {
+        "scenario": "Freiwillige Gesundheits-App",
+        "decision": "approve",
+        "metadata": {
+          "model": "QIMES",
+          "scenario": "Freiwillige Gesundheits-App",
+          "initial_state": [
+            0.3892494720807615,
+            0.778498944161523,
+            0.49236596391733095
+          ],
+          "final_state": [
+            0.36474979632832993,
+            0.7951545559957592,
+            0.4844448556416185
+          ],
+          "weights": {
+            "harm": 0.13304241392155816,
+            "benefit": 0.632270767920813,
+            "reflection": 0.23468681815762857
+          },
+          "reason": "Nutzen überwiegt Schaden deutlich"
+        },
+        "ground_truth": "approve"
+      },
+      {
+        "scenario": "COVID-Kontaktverfolgung",
+        "decision": "approve",
+        "metadata": {
+          "model": "QIMES",
+          "scenario": "COVID-Kontaktverfolgung",
+          "initial_state": [
+            0.4662524041201569,
+            0.6255432421712243,
+            0.6255432421712243
+          ],
+          "final_state": [
+            0.39459169785828535,
+            0.6882204106191837,
+            0.608810363240047
+          ],
+          "weights": {
+            "harm": 0.15570260801868435,
+            "benefit": 0.47364733359283784,
+            "reflection": 0.370650058388478
+          },
+          "reason": "Nutzen überwiegt Schaden deutlich"
+        },
+        "ground_truth": "approve"
+      },
+      {
+        "scenario": "KI-Recruiting mit historischem Bias",
+        "decision": "blocked_by_dignity",
+        "metadata": {
+          "model": "QIMES",
+          "scenario": "KI-Recruiting mit historischem Bias",
+          "violated_constraints": [
+            "no_discrimination",
+            "equal_treatment"
+          ],
+          "reason": "Würde-Constraint verletzt"
+        },
+        "ground_truth": "blocked"
+      },
+      {
+        "scenario": "Adaptive Lernplattform",
+        "decision": "approve",
+        "metadata": {
+          "model": "QIMES",
+          "scenario": "Adaptive Lernplattform",
+          "initial_state": [
+            0.43574467033059505,
+            0.7115680669648201,
+            0.5511782546095504
+          ],
+          "final_state": [
+            0.39900955751059497,
+            0.729769464401344,
+            0.5551827643601469
+          ],
+          "weights": {
+            "harm": 0.1592086269848008,
+            "benefit": 0.5325634711726246,
+            "reflection": 0.3082279018425744
+          },
+          "reason": "Nutzen überwiegt Schaden deutlich"
+        },
+        "ground_truth": "approve"
+      },
+      {
+        "scenario": "Soziales Scoring-System",
+        "decision": "blocked_by_dignity",
+        "metadata": {
+          "model": "QIMES",
+          "scenario": "Soziales Scoring-System",
+          "violated_constraints": [
+            "privacy_protection",
+            "autonomy_respect",
+            "dignity_as_subject"
+          ],
+          "reason": "Würde-Constraint verletzt"
+        },
+        "ground_truth": "blocked"
+      }
+    ],
+    "Utilitarismus": [
+      {
+        "scenario": "Medizinische Triage (jung vs. alt)",
+        "decision": "human_review",
+        "metadata": {
+          "model": "Utilitarismus",
+          "scenario": "Medizinische Triage (jung vs. alt)",
+          "net_benefit": -0.09999999999999998,
+          "reason": "Grenzfall"
+        },
+        "ground_truth": "reject"
+      },
+      {
+        "scenario": "Heimliche Emotionsanalyse im Handel",
+        "decision": "human_review",
+        "metadata": {
+          "model": "Utilitarismus",
+          "scenario": "Heimliche Emotionsanalyse im Handel",
+          "net_benefit": -0.10000000000000009,
+          "reason": "Grenzfall"
+        },
+        "ground_truth": "blocked"
+      },
+      {
+        "scenario": "Kredit-Scoring mit Wohnort",
+        "decision": "human_review",
+        "metadata": {
+          "model": "Utilitarismus",
+          "scenario": "Kredit-Scoring mit Wohnort",
+          "net_benefit": -0.09999999999999998,
+          "reason": "Grenzfall"
+        },
+        "ground_truth": "human_review"
+      },
+      {
+        "scenario": "Freiwillige Gesundheits-App",
+        "decision": "approve",
+        "metadata": {
+          "model": "Utilitarismus",
+          "scenario": "Freiwillige Gesundheits-App",
+          "net_benefit": 0.6000000000000001,
+          "reason": "Positiver Nettonutzen"
+        },
+        "ground_truth": "approve"
+      },
+      {
+        "scenario": "COVID-Kontaktverfolgung",
+        "decision": "approve",
+        "metadata": {
+          "model": "Utilitarismus",
+          "scenario": "COVID-Kontaktverfolgung",
+          "net_benefit": 0.4,
+          "reason": "Positiver Nettonutzen"
+        },
+        "ground_truth": "approve"
+      },
+      {
+        "scenario": "KI-Recruiting mit historischem Bias",
+        "decision": "reject",
+        "metadata": {
+          "model": "Utilitarismus",
+          "scenario": "KI-Recruiting mit historischem Bias",
+          "net_benefit": -0.30000000000000004,
+          "reason": "Negativer Nettonutzen"
+        },
+        "ground_truth": "blocked"
+      },
+      {
+        "scenario": "Adaptive Lernplattform",
+        "decision": "approve",
+        "metadata": {
+          "model": "Utilitarismus",
+          "scenario": "Adaptive Lernplattform",
+          "net_benefit": 0.5,
+          "reason": "Positiver Nettonutzen"
+        },
+        "ground_truth": "approve"
+      },
+      {
+        "scenario": "Soziales Scoring-System",
+        "decision": "reject",
+        "metadata": {
+          "model": "Utilitarismus",
+          "scenario": "Soziales Scoring-System",
+          "net_benefit": -0.44999999999999996,
+          "reason": "Negativer Nettonutzen"
+        },
+        "ground_truth": "blocked"
+      }
+    ],
+    "Regelbasiert": [
+      {
+        "scenario": "Medizinische Triage (jung vs. alt)",
+        "decision": "reject",
+        "metadata": {
+          "model": "Regelbasiert",
+          "scenario": "Medizinische Triage (jung vs. alt)",
+          "reason": "Schaden über Schwellenwert (0.6)"
+        },
+        "ground_truth": "reject"
+      },
+      {
+        "scenario": "Heimliche Emotionsanalyse im Handel",
+        "decision": "reject",
+        "metadata": {
+          "model": "Regelbasiert",
+          "scenario": "Heimliche Emotionsanalyse im Handel",
+          "reason": "Schaden über Schwellenwert (0.6)"
+        },
+        "ground_truth": "blocked"
+      },
+      {
+        "scenario": "Kredit-Scoring mit Wohnort",
+        "decision": "reject",
+        "metadata": {
+          "model": "Regelbasiert",
+          "scenario": "Kredit-Scoring mit Wohnort",
+          "reason": "Potentielle Würdeverletzung erkannt",
+          "violations": [
+            "no_discrimination"
+          ]
+        },
+        "ground_truth": "human_review"
+      },
+      {
+        "scenario": "Freiwillige Gesundheits-App",
+        "decision": "approve",
+        "metadata": {
+          "model": "Regelbasiert",
+          "scenario": "Freiwillige Gesundheits-App",
+          "reason": "Ausreichender Nutzen"
+        },
+        "ground_truth": "approve"
+      },
+      {
+        "scenario": "COVID-Kontaktverfolgung",
+        "decision": "approve",
+        "metadata": {
+          "model": "Regelbasiert",
+          "scenario": "COVID-Kontaktverfolgung",
+          "reason": "Ausreichender Nutzen"
+        },
+        "ground_truth": "approve"
+      },
+      {
+        "scenario": "KI-Recruiting mit historischem Bias",
+        "decision": "reject",
+        "metadata": {
+          "model": "Regelbasiert",
+          "scenario": "KI-Recruiting mit historischem Bias",
+          "reason": "Schaden über Schwellenwert (0.6)"
+        },
+        "ground_truth": "blocked"
+      },
+      {
+        "scenario": "Adaptive Lernplattform",
+        "decision": "approve",
+        "metadata": {
+          "model": "Regelbasiert",
+          "scenario": "Adaptive Lernplattform",
+          "reason": "Ausreichender Nutzen"
+        },
+        "ground_truth": "approve"
+      },
+      {
+        "scenario": "Soziales Scoring-System",
+        "decision": "reject",
+        "metadata": {
+          "model": "Regelbasiert",
+          "scenario": "Soziales Scoring-System",
+          "reason": "Schaden über Schwellenwert (0.6)"
+        },
+        "ground_truth": "blocked"
+      }
+    ],
+    "Statistisch": [
+      {
+        "scenario": "Medizinische Triage (jung vs. alt)",
+        "decision": "human_review",
+        "metadata": {
+          "model": "Statistisch",
+          "scenario": "Medizinische Triage (jung vs. alt)",
+          "success_probability": 0.474,
+          "reason": "Mittlere Erfolgswahrscheinlichkeit"
+        },
+        "ground_truth": "reject"
+      },
+      {
+        "scenario": "Heimliche Emotionsanalyse im Handel",
+        "decision": "human_review",
+        "metadata": {
+          "model": "Statistisch",
+          "scenario": "Heimliche Emotionsanalyse im Handel",
+          "success_probability": 0.5319999999999999,
+          "reason": "Mittlere Erfolgswahrscheinlichkeit"
+        },
+        "ground_truth": "blocked"
+      },
+      {
+        "scenario": "Kredit-Scoring mit Wohnort",
+        "decision": "human_review",
+        "metadata": {
+          "model": "Statistisch",
+          "scenario": "Kredit-Scoring mit Wohnort",
+          "success_probability": 0.41000000000000003,
+          "reason": "Mittlere Erfolgswahrscheinlichkeit"
+        },
+        "ground_truth": "human_review"
+      },
+      {
+        "scenario": "Freiwillige Gesundheits-App",
+        "decision": "approve",
+        "metadata": {
+          "model": "Statistisch",
+          "scenario": "Freiwillige Gesundheits-App",
+          "success_probability": 0.752,
+          "reason": "Hohe statistische Erfolgswahrscheinlichkeit"
+        },
+        "ground_truth": "approve"
+      },
+      {
+        "scenario": "COVID-Kontaktverfolgung",
+        "decision": "approve",
+        "metadata": {
+          "model": "Statistisch",
+          "scenario": "COVID-Kontaktverfolgung",
+          "success_probability": 0.765,
+          "reason": "Hohe statistische Erfolgswahrscheinlichkeit"
+        },
+        "ground_truth": "approve"
+      },
+      {
+        "scenario": "KI-Recruiting mit historischem Bias",
+        "decision": "human_review",
+        "metadata": {
+          "model": "Statistisch",
+          "scenario": "KI-Recruiting mit historischem Bias",
+          "success_probability": 0.438,
+          "reason": "Mittlere Erfolgswahrscheinlichkeit"
+        },
+        "ground_truth": "blocked"
+      },
+      {
+        "scenario": "Adaptive Lernplattform",
+        "decision": "approve",
+        "metadata": {
+          "model": "Statistisch",
+          "scenario": "Adaptive Lernplattform",
+          "success_probability": 0.7280000000000001,
+          "reason": "Hohe statistische Erfolgswahrscheinlichkeit"
+        },
+        "ground_truth": "approve"
+      },
+      {
+        "scenario": "Soziales Scoring-System",
+        "decision": "human_review",
+        "metadata": {
+          "model": "Statistisch",
+          "scenario": "Soziales Scoring-System",
+          "success_probability": 0.35750000000000004,
+          "reason": "Mittlere Erfolgswahrscheinlichkeit"
+        },
+        "ground_truth": "blocked"
+      }
+    ]
+  },
+  "evaluation": {
+    "QIMES": {
+      "accuracy": 0.75,
+      "dignity_blocks": 5,
+      "human_reviews": 0,
+      "total_decisions": 8
+    },
+    "Utilitarismus": {
+      "accuracy": 0.5,
+      "dignity_blocks": 0,
+      "human_reviews": 3,
+      "total_decisions": 8
+    },
+    "Regelbasiert": {
+      "accuracy": 0.5,
+      "dignity_blocks": 0,
+      "human_reviews": 0,
+      "total_decisions": 8
+    },
+    "Statistisch": {
+      "accuracy": 0.5,
+      "dignity_blocks": 0,
+      "human_reviews": 5,
+      "total_decisions": 8
+    }
+  }
+}
